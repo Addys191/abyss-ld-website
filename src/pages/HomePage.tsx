@@ -2,6 +2,18 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, TrendingUp, Users, BookOpen, Calendar, Award, Target } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
+// Import assets from src/assets
+import hero1 from '../assets/images/hero1.jpg'
+import hero2 from '../assets/images/hero2.jpg'
+import hero3 from '../assets/images/hero3.jpg'
+import hero4 from '../assets/images/hero4.jpg'
+import hero5 from '../assets/images/hero5.jpg'
+import hero6 from '../assets/images/hero6.jpg'
+import vid1 from '../assets/videos/vid1.mp4'
+import vid2 from '../assets/videos/vid2.mp4'
+import vid7 from '../assets/videos/vid7.mp4'
+import vid8 from '../assets/videos/vid8.mp4'
+
 const HomePage = () => {
   const announcements = [
     {
@@ -43,12 +55,12 @@ const HomePage = () => {
 
   // Carousel state for hero images
   const heroImages = [
-    '/images/hero1.jpg',
-    '/images/hero2.jpg',
-    '/images/hero3.jpg',
-    '/images/hero4.jpg',
-    '/images/hero5.jpg',
-    '/images/hero6.jpg',
+    hero1,
+    hero2,
+    hero3,
+    hero4,
+    hero5,
+    hero6,
   ]
   const [currentHero, setCurrentHero] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
@@ -70,7 +82,7 @@ const HomePage = () => {
       <section className="relative text-white overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="/images/vid1.mp4"
+          src={vid1}
           autoPlay
           loop
           muted
@@ -179,7 +191,7 @@ const HomePage = () => {
             {/* Our Vision with vid7.mp4 background */}
             <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden min-h-[546px] flex flex-col justify-center" style={{height: '546px'}}>
               <video
-                src="/images/vid7.mp4"
+                src={vid7}
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 autoPlay
                 loop
@@ -202,7 +214,7 @@ const HomePage = () => {
             {/* Our Mission with vid8.mp4 background */}
             <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden min-h-[546px] flex flex-col justify-center" style={{height: '546px'}}>
               <video
-                src="/images/vid8.mp4"
+                src={vid8}
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 autoPlay
                 loop
@@ -232,7 +244,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <video
-                src="/images/vid2.mp4"
+                src={vid2}
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
                 autoPlay
                 loop

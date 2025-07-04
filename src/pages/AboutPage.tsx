@@ -1,4 +1,8 @@
 import { Calendar, CheckCircle, TrendingUp, Users, Target, Award, Lightbulb, BarChart3 } from 'lucide-react'
+// Import assets from src/assets
+import vid9 from '../assets/videos/vid9.mp4'
+import achievementImg from '../assets/images/achievement.jpg'
+import vid4 from '../assets/videos/vid4.mp4'
 
 const AboutPage = () => {
   const achievements = [
@@ -113,10 +117,10 @@ const AboutPage = () => {
           className="absolute inset-0 w-full h-full object-cover z-0"
           style={{ filter: 'brightness(0.75) blur(0px)' }} // Increased brightness for more visibility
         >
-          <source src="/images/vid9.mp4" type="video/mp4" />
+          <source src={vid9} type="video/mp4" />
         </video>
         {/* Overlay for better text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-700/40 to-purple-700/40 z-10" /> {/* Reduced overlay opacity */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-700/40 to-purple-700/40 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">Journey Through the ABYSS: Discover, Learn & Grow.</h1>
@@ -149,7 +153,7 @@ const AboutPage = () => {
           </div>
           <div>
             <img
-              src="/images/achievement.jpg"
+              src={achievementImg}
               alt="Achievement and growth"
               className="rounded-xl shadow-lg w-full h-96 object-cover"
             />
@@ -203,7 +207,7 @@ const AboutPage = () => {
               className="absolute inset-0 w-full h-full object-cover z-0"
               style={{ filter: 'brightness(1) blur(0px)' }}
             >
-              <source src="/images/vid4.mp4" type="video/mp4" />
+              <source src={vid4} type="video/mp4" />
             </video>
             <div className="relative z-10 rounded-2xl bg-white/40 dark:bg-gray-900/40 backdrop-blur-xs p-10 flex flex-col items-center"
               style={{ minHeight: '120%' }}

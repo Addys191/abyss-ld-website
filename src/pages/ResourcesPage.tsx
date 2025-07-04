@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Search, Filter, Download, FileText, Video, Image, Archive, Upload, Eye, Clock, User } from 'lucide-react'
+import vid11 from '../assets/videos/vid11.mp4'
 
 const ResourcesPage = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -149,7 +150,7 @@ const ResourcesPage = () => {
           className="absolute inset-0 w-full h-full object-cover z-0"
           style={{ filter: 'brightness(0.8) blur(0px)' }}
         >
-          <source src="/images/vid11.mp4" type="video/mp4" />
+          <source src={vid11} type="video/mp4" />
         </video>
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-800/30 to-blue-800/30 z-10" />

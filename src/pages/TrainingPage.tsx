@@ -1,4 +1,5 @@
 import { ExternalLink, FileText, Play, Package, FlaskConical, Tag, FolderOpen, Clock, Users, CheckCircle } from 'lucide-react'
+import vid3 from '../assets/videos/vid3.mp4'
 
 const TrainingPage = () => {
   const trainingModules = [
@@ -215,7 +216,7 @@ const TrainingPage = () => {
       <section className="relative overflow-hidden bg-gradient-to-r from-green-600 to-blue-600 text-white py-20">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="/images/vid3.mp4"
+          src={vid3}
           autoPlay
           loop
           muted

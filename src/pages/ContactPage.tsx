@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, User, Send, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react'
+// Import assets from src/assets
+import vid6 from '../assets/videos/vid6.mp4'
+import contactImg from '../assets/images/contact.jpg'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -110,7 +113,7 @@ const ContactPage = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="/images/vid6.mp4"
+          src={vid6}
           autoPlay
           loop
           muted
@@ -178,7 +181,7 @@ const ContactPage = () => {
             
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 p-8 flex items-center justify-center">
               <img
-                src="/images/contact.jpg"
+                src={contactImg}
                 alt="Ahmad Raza - L&D Department Lead"
                 className="rounded-xl shadow-lg w-full max-w-sm h-90 object-cover"
               />

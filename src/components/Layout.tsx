@@ -1,6 +1,7 @@
 import { ReactNode, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Moon, Sun, Users, FileText, BarChart3, MessageSquare, Phone, Home, BookOpen } from 'lucide-react'
+import abyssLogo from '../assets/images/ABYSS LOGO 100.png'
 
 interface LayoutProps {
   children: ReactNode
@@ -36,7 +37,7 @@ const Layout = ({ children, darkMode, toggleDarkMode }: LayoutProps) => {
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-3">
                 <div className="w-11 h-10 bg-gradient-to-r from-indigo-600 to-yellow-700 rounded-lg flex items-center justify-center">
-                  <img src="/images/ABYSS LOGO 100.png" alt="Abyss Logo" className="w-9 h-9 object-contain" />
+                  <img src={abyssLogo} alt="Abyss Logo" className="w-9 h-9 object-contain" />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-blue-500 dark:text-white" style={{ fontFamily: 'Comic Relief, cursive' }}>Abyss L&D</h1>
@@ -126,7 +127,7 @@ const Layout = ({ children, darkMode, toggleDarkMode }: LayoutProps) => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-r from-yellow-600 to-cyan-600 rounded-lg flex items-center justify-center">
-                  <img src="/images/ABYSS LOGO 100.png" alt="Abyss Logo" className="w-9 h-9 object-contain" />
+                  <img src={abyssLogo} alt="Abyss Logo" className="w-9 h-9 object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Abyss L&D Department</h3>
               </div>

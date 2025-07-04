@@ -1,5 +1,6 @@
 import { Calendar, TrendingUp, Target, AlertCircle, Download, Eye, Archive, BarChart3 } from 'lucide-react'
 import { useRef, useState } from 'react'
+import vid5 from '../assets/videos/vid5.mp4'
 
 const ReportsPage = () => {
   const [printReportId, setPrintReportId] = useState<number | null>(null)
@@ -146,7 +147,7 @@ const ReportsPage = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="/images/vid5.mp4"
+          src={vid5}
           autoPlay
           loop
           muted

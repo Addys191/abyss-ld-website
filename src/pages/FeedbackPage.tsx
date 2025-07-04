@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { MessageSquare, Plus, Users, Star, Send, CheckCircle, AlertCircle } from 'lucide-react'
+// Import assets from src/assets
+import vid10 from '../assets/videos/vid10.mp4'
 
 const FeedbackPage = () => {
   const [activeForm, setActiveForm] = useState('feedback')
@@ -390,7 +392,7 @@ const FeedbackPage = () => {
           className="absolute inset-0 w-full h-full object-cover z-0"
           style={{ filter: 'brightness(0.95) blur(0px)' }}
         >
-          <source src="/images/vid10.mp4" type="video/mp4" />
+          <source src={vid10} type="video/mp4" />
         </video>
         {/* Overlay for better text visibility - now greenish and less prominent */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-400/20 z-10" />
